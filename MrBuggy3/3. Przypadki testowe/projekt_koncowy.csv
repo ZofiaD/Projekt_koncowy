@@ -1,0 +1,88 @@
+﻿"ID","Title","Expected Result","Forecast","Preconditions","Priority","Steps","Steps","Steps (Step)"
+"C1","Sprawdzenie zgodności aplikacji z systemem operacyjnym Windows 7","Aplikacja została poprawnie uruchomiona","","komputer z systemem operacyjnym Windows 7, rozpakowane archiwum z aplikacją","Medium","","Uruchomienie aplikacji klikając w plik wykonywalny",""
+"C2","Sprawdzenie zgodności aplikacji z systemem operacyjnym Windows 8/8.1","Aplikacja została poprawnie uruchomiona","","komputer z systemem operacyjnym Windows 8/8.1, rozpakowane archiwum z aplikacją","Medium","","Uruchomienie aplikacji klikając w plik wykonywalny",""
+"C3","[Interfejs] Ikona MrBuggy 3 widoczna w oknie aplikacji","
+Ikona MrBuggy 3 widoczna w lewym górynym rogu okna aplikacji (Weryfikacja zgodności z makietami)","","Uruchomienie aplikacji","Medium","","Użytkownik przechodzi na stronę logowania
+Użytkownik loguje się na dowolny tryb
+Po prawidłowym zalogowaniu, w oknie aplikacji użytkownik widzi ikonę MrBuggy 3",""
+"C4","Utrata połączenia sieciowego","
+sposób działania aplikacji nie zmienia się po odłączeniu od sieci","","użytkownik musi być zalogowany do aplikacji","Medium","","użytkownik upewnia się czy wszystkie funkcje aplikacji działają
+użytkownik wyłącza dostęp do sieci
+użytkownik sprawdza czy wszystkie funkcje aplikacji nadal działają",""
+"C5","Aplikacja nie może używać  więcej niż 100MB pamięci","
+Aplikacja nie pobiera więcej niż 100MB pamięci systemowej podczas użytkowania","","Aplikacja mierząca użycie pamięci","Medium","","Włączamy aplikacje mierzącą zużycie pamięci systemowej
+Uruchamiamy aplikacje MrBuggy
+Analizujemy poprzez aplikację zużycie pamięci systemowej
+Sprawdzamy funkcje aplikacji i sprawdzamy jak wpływa na zużycie pamieci",""
+"C6","Testowanie czasu generowania raportu < 15 sekund","
+Wygenerowanie raportu poniżej <15 sekund","","Otwarta aplikacja Mr Buggy 3.","Medium","","Przygotowanie stopera do pomiaru czasu generowania raportu.
+Kliknij przycisk generuj raport.",""
+"C7","Praca w trybie kapitana drużyny","
+podświetlenie pola ""Kapitan drużyny"" oraz wyświetlenie komunikatu: ""Czy potwierdzasz swój wybór? Nie można zmienić trybu pracy w trakcie działania aplikacji""
+użytkownik jest zalogowany i może pracować w trybie Kapitana drużyny - m.in. ma możliwość raportowania defektów","","uruchomienie aplikacji, użytkownik jest zarejestrowany","Medium","","Wypełnij pole Login
+Wypełnij pole Hasło
+Wybór trybu pracy: kapitan drużyny
+Naciśnij przycisk ""Zaloguj się""",""
+"C8","Praca w trybie członka drużyny","
+podświetlenie pola ""Członek drużyny"" oraz wyświetlenie komunikatu: ""Czy potwierdzasz swój wybór? Nie można zmienić trybu pracy w trakcie działania aplikacji""
+użytkownik jest zalogowany i może pracować w trybie Członka drużyny - m.in. nie ma możliwości raportowania defektów","","uruchomienie aplikacji, użytkownik jest zarejestrowany","Medium","","Wypełnij pole Login
+Wypełnij pole Hasło
+Wybór trybu pracy: członek drużyny
+Naciśnij przycisk ""Zaloguj się""",""
+"C9","Praca w trybie zawodnika","
+podświetlenie pola ""Zawodnik"" oraz wyświetlenie komunikatu: ""Czy potwierdzasz swój wybór? Nie można zmienić trybu pracy w trakcie działania aplikacji""
+użytkownik jest zalogowany i może pracować w trybie Zawodnika - m.in. ma możliwość raportowania defektów","","uruchomienie aplikacji, użytkownik jest zarejestrowany","Medium","","Wypełnij pole Login
+Wypełnij pole Hasło
+Wybór trybu pracy: zawodnik
+Naciśnij przycisk ""Zaloguj się""",""
+"C10","Zablokowana możliwość raportowania defektów w trybie członka drużyny.","
+Członek drużyny nie ma możliwości raportowania defektów.","","Użytkownik korzysta z aplikacji “Mr Buggy 3” jako członek drużyny.","Medium","","Użytkownik loguje się w aplikacji jeśli jest to wymagane.
+Użytkownik loguje się w trybie członka drużyny.
+Sprawdzamy czy w trybie członka drużyny istnieje możliwość raportowania defektów.",""
+"C11","Sprawdzenie możliwości zarejestrowania się w aplikacji MrBuggy przy użyciu loginu o konkretnych wymaganiach","
+Powiodła się rejestracja, jest możliwe logowanie","","Użytkownik nie znajduje się w bazie, login musi mieć od 2 do 8 znaków, bez białych znaków, bez polskich znaków","Medium","","Uruchom aplikację
+kliknij pole zarejestruj się
+wypełnij pole login
+wypełnij pole hasło
+wypełnij pole powtórz hasło
+kliknij pole zarejestruj sie",""
+"C12","Logowanie do aplikacji MrBuggy","
+Logowanie do aplikacji powiodło się","","Użytkownik jest zarejestrowany w bazie, login musi mieć od 2 do 8 znaków, bez białych znaków, bez polskich znaków","Medium","","Uruchom aplikację
+Kliknij pole zaloguj się
+wypełnij pole login, zgodnie z wymaganiami z warunków wstępnych
+wypełnij pole hasło
+kliknij pole zaloguj się",""
+"C13","Niespodziewane zamknięcie aplikacji","
+Po uruchomieniu zastaniemy stan ktory edytowalismy ostatnio","","Uruchomiona aplikacja, zalogowany użytkownik","Medium","","Wprowadzamy dowolną zmiane poprzez wprowadzenie nowych lub edytowanie starych danych.
+Wyłączamy na twardo komputer
+Uruchamiamy ponownie aplikacje
+Logujemy się tymi samymi danymi co poprzednio",""
+"C14","Próba utworzenia kopi zapasowej, w trybie zawodnika aplikacji.","
+Utworzy się kopia zapasowa z aktualnym stanem aplikacji. Zostanie wysłany raport defektu do części serwerowej aplikacji.","","poprawne zalogowanie do aplikacji","Medium","","Wybranie losowego zadania
+Kliknięcie przycisku “Zaraportuj defekt”",""
+"C16","Przypisanie klas defektów do każdego zadania","Wyświetla się komunikat ilości poszczególnych zadań przypisanych do danej klasy, suma zadań =15","","Uruchomienie aplikacji","Medium","","Wpisanie komendy wyszukania klas: trywialne, normalne, krytyczne",""
+"C17","Sprawdzenie funkcji blokady konta po 3-krotnym wpisaniu błednego hasła","Pojawia się okienko do wpisania loginu i hasła
+Pojawia się komunikat ""Niepoprawne hasło""
+Pojawia się komunikat ""Niepoprawne hasło""
+Pojawia się komunikat o blokadzie konta","","Należy posiadać zainstalowaną aplikację MrBuggy3","Medium","","Włączyć aplikację MrBuggy3
+Wpisać swój login w polu ""Login""
+Wpisać blędne hasło w polu Hasło
+Wpisać blędne hasło w polu Hasło
+Wpisać blędne hasło w polu Hasło",""
+"C18","Rejestracja konta przy użyciu hasła składającego się z 8 znaków","
+Pojawia się komunikat „Podane hasło jest nieprawidłowe”.","","środowisko: Windows 7/8/8.1, użytkownik niezarejestrowany, uruchomiona aplikacja MrBuggy3","Medium","","Kliknij pole ""zarejestruj się""
+Wypełnij pole ""Imię""
+Wypełnij pole ""Nazwisko""
+Wypełnij pole ""Login""
+Wypełnij pole ""e-mail""
+Wypełnij pole ""Hasło"" 8 dowolnymi znakami
+Wypełnij pole ""Powtórz hasło"" tymi samymi znakami co powyżej
+Kliknij przycisk ""zarejestruj się""",""
+"C19","Zmiana ilości punktów na wersji serwerowej aplikacji Mr Buggy 3","
+Aplikacja wyświetli punktację zgodnie z naszymi zmianami.","","Otwarta aplikacja Mr Buggy 3 z wykonanym zadaniem i podliczonymi punktami przez aplikację.","Medium","","Kliknij przycisk „Zmień punktację”
+wprowadź inną ilość punktów niż wyliczyła aplikacja
+Zatwierdź zmiany przyciskiem „Zmień punktację”",""
+"C15","Ilość zadań testowych","
+wyswietla sie tylko dwa zadania","","Windows 7 ,8/8.1, Wersja demonstarcyjna programu, posiadanie konta.","Medium","","Otwarcie programu demo
+zalogowanie sie do aplikacji, jesli wymagane
+sprawdzenie ilosci zadan klikajac przyciski nastepne oraz weryfikujac liste zadań.",""
